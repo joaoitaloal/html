@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mídias</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/stylety.css">
 </head>
 <body>
-    <p><a href="index.html">Página Principal</a></p>
-    <h1>imagem dinamica</h1>
-    <p>imagem que aumenta e diminui de tamanho dependendo da largura do navegador, bom para evitar que o usuário precise usar rolagem horizontal para ver a imagem inteira</p>
-    <p>para fazer isso utilizamos a tag "picture" que é como uma lista que aceita parametros (parecidos com ifs) e mostra as imagens dependendo desses parametros</p>
-    <picture>
-        <source media="(max-width: 750px)" srcset="midias/torreeiffel300.jpg" type="image/jpg">
-        <source media="(max-width: 1050px)" srcset="midias/torreeiffel700.jpg" type="image/jpg">
-        <img src="midias/torreeiffel1000.jpg" alt="torre eiffel">
-    </picture>
-    <hr>
-    <h1>audios</h1>
-    <p><strong>a melhor forma de implementar audio em sites é utilizando javascript</strong></p>
-    <p>para os audios podemos utilizar a tag "audio", podendo ser utilizada como uma lista de sources ou apenas um, é melhor usar como lista e fornecer varios tipos de arquivo de audio pois nem todos os navegadores tem compatibilidade com todos os tipos de arquivos</p>
-    <audio preload="metadata" autoplay controls>
-        <!--tenta carregar os arquivos de cima pra baixo-->
-        <source src="midias/euuclick.mp3" type="audio/mpeg">
-        <source src="midias/euuclick.wav" type="audio/wav">
-        <source src="midias/euuclick.ogg" type="audio/ogg">
-        <p>seu navegador não suporta audio</p>
-    </audio>
-    <p>pelas minhas pesquisas por fora, uma forma mais segura de fazer o autoplay e tudo mais funcionar é usando javascript</p>
-    <hr>
-    <h1>videos</h1>
-    <h2>videos hospedados localmente</h2>
-    <p>um grande problema de hospedar videos localmente é que o custo da hospedagem de videos é muito alta e vai ter que sair do seu bolso</p>
-    <p>para adicionar videos ao site utilizamos a tag "video" de forma bem parecida com a de audio, colocando sources e etc</p>
-    <video controls  poster="midias/imagem1alpha.png" width="500">
-        <source src="midias/clipbrawl.mp4" type="video/mp4">
-        <p>seu navegador não tem suporte para videos</p>
-    </video>
-    <p>para videos também é recomendavel usar vários formatos de vídeos, apesar que eu não tou fazendo isso aqui, mas faça</p>
-    <h2>incorporando videos</h2>
-    <p>as duas melhores opções para incorporação de videos são o Vimeo, cujas vantagens são a melhor qualidade e maior personalização, e o Youtube, cujas vantagens são melhor codec e ser mais conhecido</p>
-    <p>para incorporar videos é possivel apenas entrar nesses sites de video, fazer upload do video que voce quer e compartilhar ele, vai aparecer a opção de incorporar e daí é só copiar pro código do seu site</p>
-    <h3>video incorporado do Youtube</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/whUKRlzkzKE?si=yhlRJUadtqJ5CM6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <header>
+        <h1>Mídias HTML</h1>
+        <nav>
+            <p><a href="../index.html">Página Principal</a></p>
+        </nav>
+    </header>
+    <main>
+        <h2>imagem dinamica</h2>
+        <p>imagem que aumenta e diminui de tamanho dependendo da largura do navegador, bom para evitar que o usuário precise usar rolagem horizontal para ver a imagem inteira</p>
+        <p>para fazer isso utilizamos a tag "picture" que é como uma lista que aceita parametros (parecidos com ifs) e mostra as imagens dependendo desses parametros</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="torreeiffel300.jpg" type="image/jpg">
+            <source media="(max-width: 1050px)" srcset="torreeiffel700.jpg" type="image/jpg">
+            <img src="torreeiffel700.jpg" alt="torre eiffel">
+        </picture>
+        <hr>
+        <h2>audios</h2>
+        <p><strong>a melhor forma de implementar audio em sites é utilizando javascript</strong></p>
+        <p>para os audios podemos utilizar a tag "audio", podendo ser utilizada como uma lista de sources ou apenas um, é melhor usar como lista e fornecer varios tipos de arquivo de audio pois nem todos os navegadores tem compatibilidade com todos os tipos de arquivos</p>
+        <audio preload="metadata" autoplay controls>
+            <!--tenta carregar os arquivos de cima pra baixo-->
+            <source src="euuclick.mp3" type="audio/mpeg">
+            <source src="euuclick.wav" type="audio/wav">
+            <source src="euuclick.ogg" type="audio/ogg">
+            <p>seu navegador não suporta audio</p>
+        </audio>
+        <p>pelas minhas pesquisas por fora, uma forma mais segura de fazer o autoplay e tudo mais funcionar é usando javascript</p>
+        <hr>
+        <h2>videos</h2>
+        <h3>videos hospedados localmente</h3>
+        <p>um grande problema de hospedar videos localmente é que o custo da hospedagem de videos é muito alta e vai ter que sair do seu bolso</p>
+        <p>para adicionar videos ao site utilizamos a tag "video" de forma bem parecida com a de audio, colocando sources e etc</p>
+        <video controls  poster="imagem1alpha.png" width="500">
+            <source src="clipbrawl.mp4" type="video/mp4">
+            <p>seu navegador não tem suporte para videos</p>
+        </video>
+        <p>para videos também é recomendavel usar vários formatos de vídeos, apesar que eu não tou fazendo isso aqui, mas faça</p>
+        <h3>incorporando videos</h3>
+        <p>as duas melhores opções para incorporação de videos são o Vimeo, cujas vantagens são a melhor qualidade e maior personalização, e o Youtube, cujas vantagens são melhor codec e ser mais conhecido</p>
+        <p>para incorporar videos é possivel apenas entrar nesses sites de video, fazer upload do video que voce quer e compartilhar ele, vai aparecer a opção de incorporar e daí é só copiar pro código do seu site</p>
+        <h4>video incorporado do Youtube</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/whUKRlzkzKE?si=yhlRJUadtqJ5CM6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main>
 </body>
 </html>
