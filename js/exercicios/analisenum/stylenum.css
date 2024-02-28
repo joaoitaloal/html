@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(65, 134, 63);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+section{
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: left;
+    width: 500px;
+    margin: auto;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.336);
+}
+div#input{
+    padding: 20px;
+}
+div#adiv{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+div#analise{
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+footer{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

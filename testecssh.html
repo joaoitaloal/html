@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylestest.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Teste CSS</title>
+    <!--<style>
+        body{
+            background-color: lightskyblue;
+        }
+    </style>-->
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>Existem três formas de aplicar CSS num documento: inline, internamente e externamente</p>
+    <p>As três formas podem ser usadas e misturadas livremente, e funcionam numa forma de "hierarquia" onde o inline sobrepõe o interno que por sua vez sobrepõe o externo</p>
+    <div style="background-color: rgb(106, 73, 138);">
+    <h2>CSS inline</h2>
+    <p>Para fazer o uso da CSS inline você basicamente chama o parametro style dentro do elemento que você que aplicar e então coloca os parametros da CSS na própria linha do elemento (exemplo no código)</p>
+    <p>Apenas aplica o estilo ao elemento em que o parametro é chamado</p>
+    </div>
+    <h2>CSS interno/local</h2>
+    <p>O CSS interno é feito na tag "meta" do código, nele você escolhe "divisores" e seleciona estilos para eles</p>
+    <p>Esse tipo de aplicação funciona para fazer um estilo especifico para uma página especifica, porém não serve para aplicar a toda a documentação do site</p>
+    <h2>CSS externo</h2>
+    <p>O CSS externo é feito num arquivo por fora com a extensão ".css", para aplicar o estilo do arquivo você deve adicionar uma tag "link" à head do documento HTMl e então especificar o nome do arquivo CSS que deve ser utilizado</p>
+    <p>Essa aplicação é a mais recomendada por ser de mais fácil manutenção e aplicação, podendo ser adicionada fácilmente em várias páginas diferentes</p>
+    <p>É possível colocar vários links para arquivos CSS na mesma página e elas irão somar umas às outras</p>
+</body>
+</html>

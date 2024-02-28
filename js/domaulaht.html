@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos Dom</title>
+    <link rel="stylesheet" href="stylejs.css">
+</head>
+<body>
+    <p><a href="jsaulaht.html" target="_self" rel="prev">Página Javascript</a></p>
+    <h1>Estudos DOM</h1>
+    <h2>Testes</h2>
+    <p>testando aiii olha</p>
+    <p>olha o <strong>teste</strong> aqui nossaaaa</p>
+    <div id="divisao">
+        <p>mais teste</p>
+    </div>
+    <br>
+    <p>mude a cor do site:</p>
+    <input type="color" name="selcor" id="selcor" onchange="mudarcor()">
+    <br>
+    <h2>Selecionando elementos do documento</h2>
+    <p>Existem algumas formas de selecionar um elemento do código:</p>
+    <dl>
+        <dt>getElementsByTagName()</dt>
+        <dd>Essa função retorna todos os elementos cuja tag coincide com o nome fornecido nos parenteses, se você quiser selecionar um elemento especifico entre as tags é possivel fornecer um numero, utilizando colchetes, que escolherá o elemento baseado na ordem que ele aparece no código, getElementsByTagName('p')[1] por exemplo retornaria a linha "olha o <strong>teste</strong>..."</dd>
+        <dt>getElementById()</dt>
+        <dd>Essa função retorna um elemento com um id especifico, esse id deve ser adicionado à tag em especifico que você quer que seja selecionada no html, getElementById('divisao') por exemplo retornaria a divisória que envelopa a linha "mais teste"</dd>
+        <dt>getElementsByName()</dt>
+        <dd>Basicamente a mesma coisa do Id porém utilizando o parametro "name" que, diferentemente do Id, não precisa ser único para todo o documento e pode ser usado em várias tags diferentes</dd>
+        <dt>getElementsByClassName()</dt>
+        <dd></dd>
+        <dt>querySelector</dt>
+        <dd>Basicamente uma mistura do id com o tagname, ele pede tanto a tag quanto o id ou a classe, o que for, querySelector('div#divisao') seleciona aquela div. Caso o parametro da div seja "class" e não "id" o código seria querySelector('div.divisao').</dd>
+    </dl>
+    <p>Todas essas funções são partes do elemento "document"</p>
+    <h2>Eventos</h2>
+    <p>Existem diversos eventos que podem ser utilizados para interagir com o html usando js</p>
+    <p>Para utilizar um evento de mouse por exemplo existem duas formas, ou colocamos um parametro na própria tag que queremos a interação, esse parametro funcionará como um evenlistener e irá disparar a função js fornecida quando o evento ocorrer. A outra forma é adicionar um event listener no próprio javascript, forma que está sendo utilizada nesse código</p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element#mouse_events">eventos de mouse</a></p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/Events">lista de eventos</a></p>
+    <h2>Criar elementos no html</h2>
+    <p>É possivel usar o document.write ou mudar o innerHTML de uma tag já existente usando o JS, porém existe uma forma simples de criar tags novas e atribuir parametros a elas utilizando a função <code>document.createElement();</code> e <code>var.setAtribute();</code>. É necessário utilizando a função <code>appendChild();</code> para adicionar o elemento criado ao código, essa função é chamada a partir de outro elemento, deve existir outras formas de adicionar, preciso testar</p>
+    <script>
+        var divi = document.getElementById('divisao')
+        var clicado = false;
+        divi.addEventListener('click', clicar)
+        
+        function mudarcor(){
+            var selcor = document.getElementById('selcor')
+            document.body.style.backgroundColor = selcor.value;
+            console.log(selcor.value);
+        }
+
+        function clicar(){
+            if(clicado === false){
+                divi.innerHTML = 'clicouuuuuuuuu'
+                clicado = true;
+            }  else{
+                divi.innerHTML = 'desclicou :/'
+                clicado = false;
+            }
+        }
+        
+    </script>
+</body>
+</html>

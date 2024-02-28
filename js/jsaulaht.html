@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylejs.css">
+    <title>Aprendizado Javascript</title>
+</head>
+<body>
+    <h1>Aprendizados de Javascript</h1>
+    <p>Para carregar os scripts utilizamos a tag "script", que deve ser colocada no final do body para que sejam carregados depois do resto do código</p>
+    <p>Os scripts, assim como as CSS, podem ser interno ou externo</p>
+    <h2>Outros sites JS</h2>
+    <p><a href="domaulaht.html" target="_self" rel="next">Estudos DOM</a></p>
+    <p><a href="exercicios/hora/hora.html">Exercício Horário</a></p>
+    <p><a href="exercicios/contador/contador.html">Exercício Contador</a></p>
+    <p><a href="exercicios/tabuada/tabuada.html">Exercício Tabuada</a></p>
+    <p><a href="exercicios/analisenum/analisenum.html">Exercício analise de números</a></p>
+    <h2>Dicas</h2>
+    <h3>Operações matemáticas especificas</h3>
+    <p>O simbolo de porcentagem (%) não funciona como porcentagem, mas sim serve para pegar o resto de uma divisão, por exemplo: 5 % 2 retornaria 1</p>
+    <p>Para fazer potencias utilizamos o simbolo "**", dois asteriscos basicamente</p>
+    <h3>Operador térnario</h3>
+    <p>Uma forma de fazer um teste e executar um comando a partir do resultado</p>
+    <pre>
+        <code>
+    nome == 'carlos'?console.log('carlos'):console.log('não carlos');
+        </code>
+    </pre>
+    <p>É basicamente uma linha em três partes: um teste, uma execução pra caso o teste retorne true e outra caso o teste retorne false</p>
+    <p>Não sei por que usar isso ao invés de condições mas tá aí, talvez tenha melhor performace ou algo assim, vale pesquisar</p>
+
+    <h2>Forma prática de escrever string</h2>
+    <p>Existe no Javascript uma forma de criar aquelas linhas que mostram variaveis e strings de forma mais fácil, que é a template string, por exemplo:</p>
+    <h3>Linha de string normal:</h3>
+    <pre><code>
+    var nome = italo
+    var idade = 18
+    var curso = cc
+    console.log('olá! me chamo ' + nome + ' tenho ' + idade + ' anos e estou cursando ' + curso)
+        </code></pre>
+    <p>o output desse código seria olá! me chamo italo tenho 18 anos e estou cursando cc</p>
+    <h3>Template string:</h3>
+    <pre><code>
+    var nome = italo
+    var idade = 18
+    var curso = cc
+    console.log(`olá! me chamo ${nome} tenho ${idade} e estou cursando ${curso}`)
+        </code></pre>
+    <p>este código teria o mesmo output: olá! me chamo italo tenho 18 anos e estou cursando cc</p>
+
+    <h2>Funções</h2>
+    <p>Existem várias formas de formatar funções no javascript, é possivel criar funções sem nome, com nome, utilizando flechas, tem exemplos na pasta de electron antes dessa de exercicios. Pelo que eu vi, não existe diferença entre essas formatações de função além da visualização mesmo</p>
+    <h3>Recursividade</h3>
+    <p>É quando chamamos uma função dentro dela mesma, um bom exemplo é essa função de fatorial:</p>
+    <pre><code>
+    function fatorial(n){
+        if(n == 1){
+            return 1;
+        }else{
+            return n * (n-1);
+        }
+    }
+    </code></pre>
+
+    <h2>Algumas Funções</h2>
+    <p>É possivel usar as funções "Number(n)" para converter uma variável para um número,independente de ser real ou inteiro, e "String(n)" para converter para uma string</p>
+    
+    <h2>Switch case</h2>
+    <p>O switch serve para situações em que você quer executar uma ação para vários possiveis valores de uma expressão</p>
+    <p>O if sempre pode substituir o switch mas creio que o switch tenha melhor performace se for um caso de multiplos valores especificos e tal</p>
+    <p>Estrutura:</p>
+    <pre>
+        <code>
+    switch(x){
+        case 0:
+            console.log('true')
+            break
+        case 1:
+            console.log('false')
+            break
+        default:
+            console.log('error')
+            break    
+    }
+</code></pre>
+    <p>Esse código basicamente vê o valor de x e se for 0 ou 1 ele retorna verdadeiro ou falso</p>
+    <p>Se o break não for colocado no código ocorre uma espécie de "efeito cascata" no qual o código vai continuar lendo os cases até encontrar um break, isso pode ser muito util se você quiser que uma sequencia de cases sejam lidos em sequencia por algum motivo</p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch">Documentação case</a></p>
+    <h2>Objetos</h2>
+    <p>Objetos são váriaveis que podem guardar diversas informações e indexar elas da forma que você quiser, arrays por exemplo são objetos porem com indexação e funções fixas</p>
+    <p>Diferente dos arrays, os objetos são definidos com chaves</p>
+    <p>exemplo de objeto:</p>
+    <pre><code>var pessoa = {nome: `carlos`,altura: 1.60, peso: 70, andar(){}}</code></pre>
+    <p>andar() nesse caso é uma função e pode aceitar parametros para aceitar uma chamada depois:</p>
+    <pre><code>
+    var pessoa = {nome: `carlos`,
+    altura: 1.60, 
+    peso: 70, 
+    crescer(crescimento = 0){
+        altura+=crescimento
+    }}</code></pre>
+    <h2>Coisas para pesquisar e se aprofundar</h2>
+    <h3>Ajax</h3>
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data">Ajax</a></p>
+    <h3>Classes</h3>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Classes</a></p>
+    <h3>RegEx</h3>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions">RegEx</a></p>
+
+    <script src="jsaula.js"></script> <!--chama um script externo a partir de um arquivo-->
+</body>
+</html>

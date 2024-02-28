@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylety.css">
+    <title>Estudo de CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Estudos de CSS</h1>
+        <nav><p>Outros sites:</p>
+            <a href="projeto/projeto.html">Projeto de site</a>
+            <a href="#">Placeholder</a>
+            <a href="#">Placeholder</a>
+            <a href="#">Placeholder</a>
+        </nav>
+    </header>
+    <main>
+        <article id="primeiro">
+            <h2>Coisas gerais de CSS</h2>
+            <p>É possivel usar "*" como tag no arquivo css para inserir propriedades globais</p>
+            <p>É possivel definir configurações especificamente para elementos que são filhos de um elementoe specifico, a linha <code>div > p{}</code> por exemplo, configura apenas paragrafos dentro de divs</p>
+            <p>Existe um shorthand para definir paddings, margens e etc, apenas use a função normalmente e escreva os valores na seguinte ordem: top, right, bottom e left</p>
+        </article>
+        <article>
+            <h2>Cores em CSS</h2>
+            <p>Parte importante do design de um site é sua paleta de cores, para isso é necessário entender a harmonia de cores: <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/02%20-%20Como%20funciona%20a%20Internet.pdf" target="_blank" rel="external">Pdf com tabela sobre significado das cores</a></p>
+            <p>O site <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">Adobe Color</a> é uma ótima ferramenta para gerar paletas de cores</p>
+            <p>Também é possivel, no adobe color, inserir imagens para pegar a paleta de cores delas e fazer gradientes com a paleta que você quiser</p>
+            <p>Além disso existe a área de explorar, onde é possivel procurar paletas de cores muito usadas e copiar elas em css, ou só pegar inspiração</p>
+            <p>No site <a href="https://www.paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external">palleton.com</a> você pode colocar uma paleta de cores e vizualizar exemplos, incluindo um template de site, utilizando sua paleta</p>
+        </article>
+        <article>
+            <h2>
+                Váriaveis CSS
+            </h2>
+            <p>
+                É possivel criar variáveis em CSS, elas podem ser muito uteis para guardar uma paleta de cores ou coisas do tipo, para criar uma variável você deve usar a pseudo-classe ":root" na CSS e então utilizar "--nomedavariavel: valor;""
+            </p>
+        </article>
+        <div id="teste"><br>Teste</div>
+        <article>
+            <h2>Tipografia</h2>
+            <p>Ao colocar a fonte no "font-family" do CSS pode ser necessário colocar aspas para fontes que tem duas palavras</p>
+            <section>
+            <h3>Serifa</h3>
+                <p>A serifa serve basicamente pra ajudar na leitura mas em meios digitais polui muito a tela</p>
+                <p>Fontes <strong>sem</strong> serifa devem ser priorizados ao utilizar em textos longos em sites, deixando as fontes com serifa para documentos destinados a serem impressos em papel</p>
+            </section>
+            <section>
+            <h3>Tamanho das fontes</h3>
+                <p>Existem diversas medidas que podem ser utilizadas para determinar o tamanho de uma fonte, elas podem ser medidas absolutas, como o pixel(px) ou centimetros(cm) ou relativas, como a relativa ao tamanho da letra M da fonte(em). É recomendado utilizar medidas relativas para fontes e se não, utilize pixels</p>
+                <p>Geralmente 16px = 1em</p>
+            </section>
+            <section>
+            <h3>Funções CSS para fontes</h3>
+                <dl>
+                    <dt>font-weigth</dt>
+                    <dd>define se a espessura da fonte, light, bold e etc</dd>
+                    <dt>font-style</dt>
+                    <dd>define o estilo da fonte, itálico e tal</dd>
+                    <dt>text-decoration</dt>
+                    <dd>aplica decorações como por exemplo sublinhado, usando underline</dd>
+                </dl>
+                <p>É possivel ainda utilizar apenas a função font, que define o estilo, espessura, tamanho e familia respectivamente. Exemplo: <strong>  'Work Sans', sans-serif;</strong> A ordem <strong>não</strong> pode ser mudada</p>
+            </section>
+            <section>
+            <h3>Importando fontes</h3>
+                <p>É possivel encontrar e importar fontes a partir do <a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a></p>
+                <p>É possivel também importar fontes baixadas utilizando o seletor @font-face</p>
+                <p>A extensão "fontsninja" permite descobrir qual a familia e outras propriedades de qualquer fonte de qualquer site da web, a extensão pode ser encontrada no chrome web store</p>
+            </section>
+        </article>
+        <article>
+            <h2>Classes e ID</h2>
+            <p>Classes podem ser usadas mais de uma vez, id's precisam ser únicos</p>
+            <p>É possivel adicionar duas classes para um unico elemento, ou até adicionar um id e uma classe no mesmo elemento, porém o id sempre terá prioridade</p>
+            <p>Um uso que achei interessante para as classes é criar uma classe que destaca uma parte do texto e usar a tag <span>"span"</span> com essa classe para destacar</p>
+        </article>
+        <article>
+            <h2>Pseudo-Classes</h2>
+            <p>São espécies de funções que podem ser ativadas em alguns eventos em especificos e assim mudar a CSS do site, são escritas usando ":"(dois pontos) depois do nome da tag</p>
+            <h3>Pseudo-Elementos</h3>
+            <p>São também meio que funções porém ao invés de mudar a CSS do documento ele muda o conteúdo do próprio elemento em HTML, eles são usados com "::"(dois dois pontos)</p>
+        </article>
+        <article>
+            <h2>Modelo de caixa</h2>
+            <p>É o modelo utilizado pelo CSS para posicionar os elementos na tela</p>
+            <p>Existem elementos box-level, que ocupam toda a largura do body, como por exemplo divs ou articles, já os elementos inline-level apenas ocupam o espaço necessário para mostrar seu conteúdo, como por exemplo spans ou strongs</p>
+        </article>
+        <article>
+            <h2>Para estudar</h2>
+            <p>Preciso estudar a semântica de algumas tags</p>
+        </article>
+        <article>
+            <h2>Layout</h2>
+            <p>É importante definir o layout de um site antes de começar a produzi-lo de fato, para isso existem ferramentas como o <a href="https://mockflow.com/">Mockflow</a>, que é pago mas tem versão gratuita</p>
+        </article>
+        <article>
+            <h2>Responsividade</h2>
+            <p>A largura máxima ideal de um bloco que comporta texto em HTML é cerca de 1200 pixels, passando disso deve ser criado um bloco que se prenda nesse tamanho</p>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        var listarticle = document.getElementsByTagName('article');
+        var add = '<hr>'
+        for(let i = 0; i < listarticle.length; i++){
+            if(listarticle[i].id == 'primeiro') continue;
+            else{
+                listarticle[i].innerHTML = add.concat(listarticle[i].innerHTML)
+            }
+        }
+    </script>
+</body>
+</html>

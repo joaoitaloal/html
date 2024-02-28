@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(58, 201, 53);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+section{
+    background-color: rgb(168, 224, 63);
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.336);
+}
+div#showhour{
+    text-align: center;
+}
+div#img{
+    position: relative;
+}
+footer{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formatações</title>
+</head>
+<body>
+    <p><a href="../index.html" rel="prev">Página Principal</a></p>
+    <h1>Formatação de texto</h1>
+    <h2>Negrito/</h2>
+    <p>um texto com um <b>termo em negrito</b> utilizando a tag "b", que apenas coloca o termo em negrito e não tem valor semântico e <strong>DEVE SER EVITADA</strong></p>
+    <p>um texto com um <strong>termo em negrito</strong> utilizando a tag "strong", que alem de destacar o termo, tem valor semântico e <strong>É MAIS ACEITA</strong></p>
+    <h2>Ítalico/Enfase</h2>
+    <p>um texto com um <i>termo em ítalico</i> utilizando a tag "i", que também não tem valor semântico e <em>DEVE SER EVITADA</em></p>
+    <p>um texto com um <em>termo em ítalico</em> utilizando a tag "em", que tem valor semântico e <em>É MAIS ACEITA</em></p>
+    <h2>Marcação</h2>
+    <p>um texto com um <mark style="background-color: rgba(137, 43, 226, 0.9)">termo marcado</mark> utilizando a tag "mark"</p>
+    <h2>Texto pequeno</h2>
+    <p>um texto com uma parte <small>em tamanho menor</small> utilizando a tag "small" existe também uma forma de aumentar o texto com a tag "big", porém esta é obsoleta, devendo-se utilizar CSS se desejar aumentar o tamanho</p>
+    <h2>Texto deletado</h2>
+    <p>um texto com um <del>termo ou parte</del> que mesmo podendo ser lido, deve ser desconsiderado</p>
+    <h2>Texto inserido</h2>
+    <p>um texto com um <ins>termo ou parte</ins> que foi inserido depois</p>
+    <h2>Texto sobrescrito</h2>
+    <p>texto com uma parte que aparecerá acima das outras, utilizando a tag "sup", podendo ser usado para indicar potências matemáticas e etc. Exemplo: 2<sup>4</sup> = 16. <br> Não é limitado à números: Sim <sup>não&copy;</sup>. <br> Pode ainda ser colocado dentro de si próprio Sobrescrito<sup>sobrescrito<sup>sobrescrito</sup></sup></p>
+    <h2>Texto subscrito</h2>
+    <p>texto com uma parte que aparecerá abaixo das outras, utilizando a tag "sub", podendo ser usado para indicar quantidade de elementos químicos e etc. Exemplo: H<sub>2</sub>O. <br> Não é limitado à números: Sim <sub>não&copy;</sub>. <br> Pode ainda ser colocado dentro de si próprio Sobrescrito<sub>sobrescrito<sub>sobrescrito</sub></sub> <br> Pode também ser utilizado com o sobrescrito: exemplo<sub>exemplo</sub><sup>exemplo</sup></p>
+    <h2>Consideração final</h2>
+    <p>qualquer tag pode ser combinada: <strong>exemplo</strong><sup><em>exemplo</em> <del>exemplo</del></sup></p>
+    <hr>
+    <h1>Outras Formatações</h1>
+    <h2>Código/Pré-formatação</h2>
+    <p>Um texto que representa um código utilizando a tag "code", que muda por exemplo a fonte: <code>system.out.println("hello world")</code> </p>
+    <pre>
+        <p>É possível mostrar um texto com todos os espaçamentos da html utilizando a tag "pre"</p>
+    if(true){
+        system.out.println("hello world");
+    }
+    </pre>
+    <h2>Citação simples</h2>
+    <p>De acordo com o físico famoso Albert Einstein: <q>Faça as coisas o mais simples que você puder, porém não se restrinja às mais simples</q>. <br> Citação feita usando a tag "q"</p>
+    <h2>Citação completa</h2>
+    <p>De acordo com o físico famoso Albert Einstein:</p>
+    <blockquote cite="https://revistagalileu.globo.com/Ciencia/noticia/2016/06/13-frases-inspiradoras-de-grandes-cientistas.html#:~:text=Albert%20Einstein%3A%20%E2%80%9CFa%C3%A7a%20as%20coisas,com%20que%20se%20sintam%20humildes.%E2%80%9D"> <!-- o cite indica o endereço da qual a citação foi tirada-->
+        Faça as coisas o mais simples que você puder, porém não se restrinja às mais simples
+    </blockquote> 
+    <p>Citação feita usando a tag "blockquote"</p>
+    <h2>Abreviação</h2>
+    <p>Este site é feito usando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">olha só tá ao contrário</bdo></p>
+    <hr>
+</body>
+</html>
