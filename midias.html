@@ -12,9 +12,9 @@
     <p>imagem que aumenta e diminui de tamanho dependendo da largura do navegador, bom para evitar que o usuário precise usar rolagem horizontal para ver a imagem inteira</p>
     <p>para fazer isso utilizamos a tag "picture" que é como uma lista que aceita parametros (parecidos com ifs) e mostra as imagens dependendo desses parametros</p>
     <picture>
-        <source media="(max-width: 750px)" srcset="torreeiffel300.jpg" type="image/jpg">
-        <source media="(max-width: 1050px)" srcset="torreeiffel700.jpg" type="image/jpg">
-        <img src="torreeiffel1000.jpg" alt="torre eiffel">
+        <source media="(max-width: 750px)" srcset="midias/torreeiffel300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="midias/torreeiffel700.jpg" type="image/jpg">
+        <img src="midias/torreeiffel1000.jpg" alt="torre eiffel">
     </picture>
     <hr>
     <h1>audios</h1>
@@ -22,9 +22,9 @@
     <p>para os audios podemos utilizar a tag "audio", podendo ser utilizada como uma lista de sources ou apenas um, é melhor usar como lista e fornecer varios tipos de arquivo de audio pois nem todos os navegadores tem compatibilidade com todos os tipos de arquivos</p>
     <audio preload="metadata" autoplay controls>
         <!--tenta carregar os arquivos de cima pra baixo-->
-        <source src="euuclick.mp3" type="audio/mpeg">
-        <source src="euuclick.wav" type="audio/wav">
-        <source src="euuclick.ogg" type="audio/ogg">
+        <source src="midias/euuclick.mp3" type="audio/mpeg">
+        <source src="midias/euuclick.wav" type="audio/wav">
+        <source src="midias/euuclick.ogg" type="audio/ogg">
         <p>seu navegador não suporta audio</p>
     </audio>
     <p>pelas minhas pesquisas por fora, uma forma mais segura de fazer o autoplay e tudo mais funcionar é usando javascript</p>
@@ -33,8 +33,8 @@
     <h2>videos hospedados localmente</h2>
     <p>um grande problema de hospedar videos localmente é que o custo da hospedagem de videos é muito alta e vai ter que sair do seu bolso</p>
     <p>para adicionar videos ao site utilizamos a tag "video" de forma bem parecida com a de audio, colocando sources e etc</p>
-    <video controls  poster="imagem1alpha.png" width="500">
-        <source src="clipbrawl.mp4" type="video/mp4">
+    <video controls  poster="midias/imagem1alpha.png" width="500">
+        <source src="midias/clipbrawl.mp4" type="video/mp4">
         <p>seu navegador não tem suporte para videos</p>
     </video>
     <p>para videos também é recomendavel usar vários formatos de vídeos, apesar que eu não tou fazendo isso aqui, mas faça</p>
