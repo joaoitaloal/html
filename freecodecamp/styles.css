@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body{
+    min-height: 700px;
+    background-image: linear-gradient(to bottom, #5a6dc2, #394579);
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+}
+p#description{
+    font-weight: bolder;
+}
+form{
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label{
+    display: block;
+    padding: 10px 0 0 0;
+}
+
+div{
+    padding: 10px 0 0 0;
+}
+div label{
+    padding: 0px;
+}
+
+input{
+    min-width: 200px;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    min-width: 0;
+}
+
+textarea{
+    display: block;
+    position: relative;
+
+}
