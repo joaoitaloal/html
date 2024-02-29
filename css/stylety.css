@@ -66,7 +66,7 @@ div#teste{
     border-radius: 50px;
 }
 
-div:hover{
+div#hover:hover{
     background-image: linear-gradient(to bottom, green, blue);
     top: 30px;
 }
@@ -78,4 +78,47 @@ a{
 
 a:visited{
     color: #6068a5;
+}
+
+div.quadrado{
+    display: inline-block;
+
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+div#q1{
+    background-image: url('../midias/Screenshot_5.png');
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    
+}
+div#q1:hover{
+    position: absolute;
+    top: 100px;
+    
+}
+
+div#centralizar{
+    position: relative;
+    padding: 10px;
+    background: black;
+    height: 300px;
+}
+article#textocentral{
+    position: absolute;
+    background-color: white;
+    background-image: url('../midias/Screenshot_5.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
