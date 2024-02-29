@@ -20,6 +20,7 @@
             <p>É possivel usar "*" como tag no arquivo css para inserir propriedades globais</p>
             <p>É possivel definir configurações especificamente para elementos que são filhos de um elementoe specifico, a linha <code>div > p{}</code> por exemplo, configura apenas paragrafos dentro de divs</p>
             <p>Existe um shorthand para definir paddings, margens e etc, apenas use a função normalmente e escreva os valores na seguinte ordem: top, right, bottom e left</p>
+            <p>Existe uma propriedade chamada box-sizing para os elementos, ela é muito interessante pois pode ser usada para definir a forma que o tamanho da box é definida, por padrão o box sizing é "content-box", isso faz com que o tamanho apenas do conteudo seja definido e depois a borda e o padding são adicionados por cima. Existe, porém, a opção de usar a "border-box" que faz com que o tamanho que você defina inclua também o padding e a borda</p>
         </article>
         <article>
             <h2>Cores em CSS</h2>
@@ -99,9 +100,14 @@
             <h2>Responsividade</h2>
             <p>A largura máxima ideal de um bloco que comporta texto em HTML é cerca de 1200 pixels, passando disso deve ser criado um bloco que se prenda nesse tamanho</p>
         </article>
+        <article>
+            <h2>Flexbox</h2>
+            <p>A flexbox é uma maneira mais fácil e prática de organizar uma sequência de divs ou o que for uma ao lado da outra e de forma mais responsiva</p>
+            <p>Só mudar o display de um elemento pra flex e todos os filhos desse elemento vão virar flex-items, coloque o flex-wrap para "wrap" pra dar uma olhada no que acontece</p>
+        </article>
     </main>
     <footer>
-
+        <p>CRIADO POR ITALO 👍</p>
     </footer>
     <script>
         var listarticle = document.getElementsByTagName('article');

@@ -15,6 +15,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #747DC2;
+    margin: 0;
 }
 
 header{
@@ -121,4 +122,17 @@ article#textocentral{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 10px 0 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+footer p{
+    margin: 0;
 }
