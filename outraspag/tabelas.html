@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylety.css">
+    <title>Tabelas</title>
+</head>
+<body>
+    <header>
+        <h1>Tabelas</h1>
+        <nav>
+            <a href="../index.html">Página principal</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Exemplo de tabela</h1>
+        <table>
+            <caption>Operações de lógica matemática</caption>
+            <thead>
+                <tr>
+                    <th scope="col">&#934;</th>
+                    <th scope="col">&#936;</th>
+                    <th scope="col">&#172;(&#934;)</th>
+                    <th scope="col">&#934; &#8744; &#936;</th>
+                    <th scope="col">&#934; &#8658; &#936;</th>
+                    <th scope="col">&#934; &#8660; &#934;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>Phi</td>
+                <td>Psi</td>
+                <td>negação de Phi</td>
+                <td>Phi ou Psi</td>
+                <td>Phi se Psi</td>
+                <td>Phi se, e somente se Psi</td>
+            </tfoot>
+        </table>
+        <p>É importante para efeitos de acessibilidade e etc utilizar o atributo "scope" nos th e no tfoot para indicar a direção de leitura e quais elementos são filhos desse titulo na tabela</p>
+        <p>É possível criar um cabeçalho fixo deixando a posição da tabela como fixa, a do th como sticky e colocando o top do th como 0</p>
+    </main>
+</body>
+</html>
