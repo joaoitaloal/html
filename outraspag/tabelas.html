@@ -15,63 +15,127 @@
     </header>
     <main>
         <h1>Exemplo de tabela</h1>
-        <table>
-            <caption>Operações de lógica matemática</caption>
-            <thead>
-                <tr>
-                    <th scope="col">&#934;</th>
-                    <th scope="col">&#936;</th>
-                    <th scope="col">&#172;(&#934;)</th>
-                    <th scope="col">&#934; &#8744; &#936;</th>
-                    <th scope="col">&#934; &#8658; &#936;</th>
-                    <th scope="col">&#934; &#8660; &#934;</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>V</td>
-                    <td>V</td>
-                    <td>F</td>
-                    <td>V</td>
-                    <td>V</td>
-                    <td>V</td>
-                </tr>
-                <tr>
-                    <td>V</td>
-                    <td>F</td>
-                    <td>F</td>
-                    <td>V</td>
-                    <td>F</td>
-                    <td>F</td>
-                </tr>
-                <tr>
-                    <td>F</td>
-                    <td>V</td>
-                    <td>V</td>
-                    <td>V</td>
-                    <td>V</td>
-                    <td>F</td>
-                </tr>
-                <tr>
-                    <td>F</td>
-                    <td>F</td>
-                    <td>V</td>
-                    <td>F</td>
-                    <td>V</td>
-                    <td>V</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td>Phi</td>
-                <td>Psi</td>
-                <td>negação de Phi</td>
-                <td>Phi ou Psi</td>
-                <td>Phi se Psi</td>
-                <td>Phi se, e somente se Psi</td>
-            </tfoot>
-        </table>
+        <div class="contabela">
+            <table>
+                <caption>Operações de lógica matemática</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">&#934;</th>
+                        <th scope="col">&#936;</th>
+                        <th scope="col">&#172;(&#934;)</th>
+                        <th scope="col">&#934; &#8744; &#936;</th>
+                        <th scope="col">&#934; &#8658; &#936;</th>
+                        <th scope="col">&#934; &#8660; &#934;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td>Phi</td>
+                    <td>Psi</td>
+                    <td>negação de Phi</td>
+                    <td>Phi ou Psi</td>
+                    <td>Phi se Psi</td>
+                    <td>Phi se, e somente se Psi</td>
+                </tfoot>
+            </table>
+        </div>
         <p>É importante para efeitos de acessibilidade e etc utilizar o atributo "scope" nos th e no tfoot para indicar a direção de leitura e quais elementos são filhos desse titulo na tabela</p>
         <p>É possível criar um cabeçalho fixo deixando a posição da tabela como fixa, a do th como sticky e colocando o top do th como 0</p>
+        <h2>outra tabela</h2>
+        <div class="contabela">
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col span="3">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">grupo</th>
+                        <th scope="col">nome</th>
+                        <th scope="colgroup" colspan="3">filme</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Mulheres</th>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Homens</th>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>É possível utilizar os atributos rowspan e colspan na tag HTML para determinar quantas colunas e linhas cada célula irá ocupar</p>
+        <p>O atributo scope precisa ser dado com group caso o colspan ou o rowspan de uma célula seja aumentado e ele entitule mais de uma célula de dado</p>
+        <p>Para selecionar colunas para mudanças de estilo por exemplo é necessário utilizar a tag colgroup para determinar quantas e quais são as colunas da tabela, é possivel usar o atributo span para determinar um grupo de colunas, essas colunas podem receber classes e etc</p>
+        <h2>Responsividade em tabelas</h2>
+        <p>Pra evitar que uma tabela muito grande crie uma rolagem lateral no site é possivel apenas criar uma div e dar à ela uma propríedade CSS de overflow-x automático</p>
     </main>
 </body>
 </html>
